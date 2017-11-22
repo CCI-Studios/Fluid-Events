@@ -1,0 +1,22 @@
+uuid: f8620d29-3a5f-4443-b83f-c09efb275cf6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.collapsible_image_content_block
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.collapsible_image_content_block.body
+field_name: body
+entity_type: block_content
+bundle: collapsible_image_content_block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

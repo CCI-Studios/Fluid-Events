@@ -1,0 +1,41 @@
+uuid: a1933060-1f42-4db4-91db-6b331f193b86
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.collapsible_image_content_block
+    - field.field.block_content.collapsible_image_content_block.body
+    - field.field.block_content.collapsible_image_content_block.field_align
+    - field.field.block_content.collapsible_image_content_block.field_background_image
+  module:
+    - image
+    - options
+    - text
+id: block_content.collapsible_image_content_block.default
+targetEntityType: block_content
+bundle: collapsible_image_content_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_align:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_background_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    type: image_url
+    region: content
+hidden: {  }

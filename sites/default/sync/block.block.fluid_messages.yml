@@ -1,0 +1,22 @@
+uuid: d2580d2a-1365-4c2f-8be4-135a04a92f7f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fluid
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: fluid_messages
+theme: fluid
+region: content
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

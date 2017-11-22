@@ -1,0 +1,29 @@
+uuid: 72515349-497a-41e3-bd9e-e654d508124f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:79dfd9b2-3718-47a6-8e3b-ab584b31842f'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - fluid
+third_party_settings:
+  block_class:
+    classes: block--show-hide-menu
+id: showhidemenu
+theme: fluid
+region: header_right
+weight: 0
+provider: null
+plugin: 'block_content:79dfd9b2-3718-47a6-8e3b-ab584b31842f'
+settings:
+  id: 'block_content:79dfd9b2-3718-47a6-8e3b-ab584b31842f'
+  label: 'Show/hide menu'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

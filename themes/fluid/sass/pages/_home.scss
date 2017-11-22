@@ -1,0 +1,37 @@
+.block--home-services
+{
+  .services-list
+  {
+    text-align: center;
+    font-weight: bold;
+    list-style: none;
+    margin-left: 0;
+
+    &
+    {
+      @media (min-width: 640px)
+      {
+        column-count: 2;
+      }
+    }
+  }
+}
+
+.block--home-quote
+{
+  .block-content
+  {
+    &:before
+    {
+      content: "";
+      display: block;
+      height: 60px;
+      background: url(../images/icon-quotes.svg) no-repeat top center;
+      filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.55));
+    }
+    em
+    {
+      font-size: 0.875em;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+uuid: 2fcbae43-0e46-4483-b16e-dd6dac6549e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.collapsible_image_content_block
+    - field.storage.block_content.field_align
+  module:
+    - options
+id: block_content.collapsible_image_content_block.field_align
+field_name: field_align
+entity_type: block_content
+bundle: collapsible_image_content_block
+label: Align
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,29 @@
+uuid: 331eba28-b700-4b40-97bc-8a741742e805
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:image_content_block:684a39ef-3adc-4242-b977-97828d7c32ec'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - fluid
+third_party_settings:
+  block_class:
+    classes: block--splash-logo
+id: splashlogo
+theme: fluid
+region: splash
+weight: -6
+provider: null
+plugin: 'block_content:684a39ef-3adc-4242-b977-97828d7c32ec'
+settings:
+  id: 'block_content:684a39ef-3adc-4242-b977-97828d7c32ec'
+  label: 'Splash logo'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

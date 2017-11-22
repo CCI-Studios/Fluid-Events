@@ -1,0 +1,28 @@
+.block--splash-logo
+{
+  height: 100vh;
+
+  .block-content
+  {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    max-width: 542px;
+    box-sizing: border-box;
+    padding: 0 25px;
+    font-size: 1.55em;
+
+    img
+    {
+      display: block;
+      max-width: 100%;
+      height: auto !important;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,173 @@
+.layout-top
+{
+  padding: 40px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  & > div
+  {
+    position: relative;
+  }
+}
+
+.block--logo
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 2s 1s, visibility 0s 3s;
+
+  img
+  {
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.35));
+  }
+}
+.show-logo .block--logo
+{
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s 1s, visibility 0s 1s;
+}
+
+.region-header-right
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  .block
+  {
+    float: left;
+  }
+}
+
+.show-menu
+{
+  font-size: 0;
+  display: block;
+  height: 10px;
+  width: 24px;
+  position: relative;
+  padding: 10px;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.35));
+
+  &:before,
+  &:after
+  {
+    content: "";
+    position: absolute;
+    width: 24px;
+    left: 10px;
+    height: 3px;
+  }
+  &:before
+  {
+    top: 10px;
+    background-color: #17a8a2;
+  }
+  &:after
+  {
+    bottom: 10px;
+    background-color: #03d0b6;
+  }
+}
+.hide-menu
+{
+  display: none;
+  font-size: 0;
+  width: 24px;
+  height: 10px;
+  padding: 10px;
+  background: url(../images/icon-menu-close.svg) no-repeat center center;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.35));
+}
+.menu-open
+{
+  .show-menu
+  {
+    display: none;
+  }
+  .hide-menu
+  {
+    display: block;
+  }
+}
+
+.block--main-menu, .block--social-menu
+{
+  display: none;
+}
+.menu-open
+{
+  .block--main-menu, .block--social-menu
+  {
+    display: block;
+  }
+}
+
+.block--main-menu
+{
+  .menu
+  {
+    li
+    {
+      list-style: none;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 8px;
+    }
+    a
+    {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.9em;
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.35);
+
+      &:hover
+      {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.block--social-menu
+{
+  margin-left: 15px;
+  margin-right: 25px;
+
+  .menu
+  {
+    li
+    {
+      display: inline-block;
+      vertical-align: top;
+      list-style: none;
+      margin-right: 8px;
+    }
+    a
+    {
+      font-size: 0;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.35));
+    }
+    .ig
+    {
+      background-image: url(../images/icon-ig-white.svg);
+    }
+    .tw
+    {
+      background-image: url(../images/icon-tw-white.svg);
+    }
+  }
+}

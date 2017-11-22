@@ -1,0 +1,8 @@
+uuid: 27dd870a-b022-4bf6-8395-cb1a166ff083
+langcode: en
+status: true
+dependencies: {  }
+id: collapsible_image_content_block
+label: 'Collapsible image content block'
+revision: 0
+description: ''

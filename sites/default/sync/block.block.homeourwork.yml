@@ -1,0 +1,35 @@
+uuid: 785d8eaf-97f6-45b7-84b1-399e9e94479b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:collapsible_image_content_block:7af4decd-93cc-4bd2-8c56-432690704530'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - fluid
+third_party_settings:
+  block_class:
+    classes: block--home-work
+id: homeourwork
+theme: fluid
+region: after_content
+weight: -5
+provider: null
+plugin: 'block_content:7af4decd-93cc-4bd2-8c56-432690704530'
+settings:
+  id: 'block_content:7af4decd-93cc-4bd2-8c56-432690704530'
+  label: 'Our Work'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

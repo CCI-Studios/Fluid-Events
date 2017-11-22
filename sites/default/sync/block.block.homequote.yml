@@ -1,0 +1,35 @@
+uuid: 5186b695-34cb-4183-9803-54943b21611e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:image_content_block:3787119a-a84e-4b18-bd73-a31da1b824d2'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - fluid
+third_party_settings:
+  block_class:
+    classes: block--home-quote
+id: homequote
+theme: fluid
+region: after_content
+weight: 0
+provider: null
+plugin: 'block_content:3787119a-a84e-4b18-bd73-a31da1b824d2'
+settings:
+  id: 'block_content:3787119a-a84e-4b18-bd73-a31da1b824d2'
+  label: 'Home - Quote'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

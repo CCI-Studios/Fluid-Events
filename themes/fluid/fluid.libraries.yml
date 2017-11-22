@@ -1,0 +1,11 @@
+global:
+  version: 1.x
+  css:
+    theme:
+      css/importer.css: {}
+  js:
+    js/menu.js: {}
+    js/collapsible-block.js: {}
+  dependencies:
+    - core/classList
+    - core/jquery

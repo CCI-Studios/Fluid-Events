@@ -1,0 +1,20 @@
+uuid: 0e70bd89-676b-4676-adcd-2027e9f687b7
+langcode: en
+status: true
+dependencies:
+  theme:
+    - fluid
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: fluid_local_actions
+theme: fluid
+region: content
+weight: -1
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
