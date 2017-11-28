@@ -1,0 +1,47 @@
+uuid: 0ab1a86c-fd2e-40b7-929b-527d964a4e1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_with_background.field_align
+    - field.field.paragraph.content_with_background.field_background_image
+    - field.field.paragraph.content_with_background.field_body
+    - image.style.large
+    - paragraphs.paragraphs_type.content_with_background
+  module:
+    - image
+    - imce
+    - text
+id: paragraph.content_with_background.default
+targetEntityType: paragraph
+bundle: content_with_background
+mode: default
+content:
+  field_align:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_background_image:
+    weight: 1
+    settings:
+      preview_image_style: large
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: false
+    type: image_image
+    region: content
+  field_body:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

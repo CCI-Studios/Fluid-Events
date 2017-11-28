@@ -1,0 +1,8 @@
+uuid: 8b9f3e7e-332c-4fb7-80ee-de0095232aa1
+langcode: en
+status: true
+dependencies: {  }
+id: page_title
+label: 'Page title'
+revision: 0
+description: ''

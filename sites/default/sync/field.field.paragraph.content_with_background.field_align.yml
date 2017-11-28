@@ -1,0 +1,23 @@
+uuid: a5854971-28de-4308-9956-259b3490e4d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_align
+    - paragraphs.paragraphs_type.content_with_background
+  module:
+    - options
+id: paragraph.content_with_background.field_align
+field_name: field_align
+entity_type: paragraph
+bundle: content_with_background
+label: Align
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

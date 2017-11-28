@@ -1,0 +1,9 @@
+uuid: aa5360bc-87c4-4e49-b736-a2c96201a22b
+langcode: en
+status: true
+dependencies: {  }
+id: image_content
+label: 'Image with caption content'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

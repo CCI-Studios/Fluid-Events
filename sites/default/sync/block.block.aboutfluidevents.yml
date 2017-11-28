@@ -1,9 +1,9 @@
-uuid: 331eba28-b700-4b40-97bc-8a741742e805
+uuid: 265ba344-99f4-4093-81cc-6136a03d83dc
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:image_content_block:684a39ef-3adc-4242-b977-97828d7c32ec'
+    - 'block_content:page_title:63970835-56cd-437d-96fa-ef77f94ef987'
   module:
     - block_class
     - block_content
@@ -12,16 +12,16 @@ dependencies:
     - fluid
 third_party_settings:
   block_class:
-    classes: block--splash-logo
-id: splashlogo
+    classes: block--page-title
+id: aboutfluidevents
 theme: fluid
-region: splash
-weight: -6
+region: before_content
+weight: 0
 provider: null
-plugin: 'block_content:684a39ef-3adc-4242-b977-97828d7c32ec'
+plugin: 'block_content:63970835-56cd-437d-96fa-ef77f94ef987'
 settings:
-  id: 'block_content:684a39ef-3adc-4242-b977-97828d7c32ec'
-  label: 'Splash logo'
+  id: 'block_content:63970835-56cd-437d-96fa-ef77f94ef987'
+  label: 'About Fluid Events'
   provider: block_content
   label_display: '0'
   status: true
@@ -30,6 +30,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: "/about\r\n/node/1"
     negate: false
     context_mapping: {  }

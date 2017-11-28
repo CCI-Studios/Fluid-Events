@@ -1,0 +1,36 @@
+uuid: 4be30ce9-2d42-436d-b620-1e1666c3dcd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_content.field_align
+    - field.field.paragraph.image_content.field_body
+    - field.field.paragraph.image_content.field_image
+    - image.style.captioned_image
+    - paragraphs.paragraphs_type.image_content
+  module:
+    - image
+    - text
+id: paragraph.image_content.default
+targetEntityType: paragraph
+bundle: image_content
+mode: default
+content:
+  field_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: captioned_image
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_align: true

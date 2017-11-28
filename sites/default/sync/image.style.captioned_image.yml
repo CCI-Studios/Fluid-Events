@@ -1,0 +1,15 @@
+uuid: f4aaa4b5-dd62-4290-8e21-2af1624f4572
+langcode: en
+status: true
+dependencies: {  }
+name: captioned_image
+label: 'Captioned image'
+effects:
+  6352f2d0-b72b-4437-843b-34c8619a2389:
+    uuid: 6352f2d0-b72b-4437-843b-34c8619a2389
+    id: image_scale
+    weight: 1
+    data:
+      width: 460
+      height: null
+      upscale: false

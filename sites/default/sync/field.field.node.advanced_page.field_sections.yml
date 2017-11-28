@@ -1,0 +1,41 @@
+uuid: c702f6e9-4c1d-48d8-aeb9-5228f7178596
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sections
+    - node.type.advanced_page
+    - paragraphs.paragraphs_type.basic_content
+    - paragraphs.paragraphs_type.content_with_background
+    - paragraphs.paragraphs_type.image_content
+  module:
+    - entity_reference_revisions
+id: node.advanced_page.field_sections
+field_name: field_sections
+entity_type: node
+bundle: advanced_page
+label: Sections
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      basic_content: basic_content
+      content_with_background: content_with_background
+      image_content: image_content
+    target_bundles_drag_drop:
+      basic_content:
+        enabled: true
+        weight: 4
+      content_with_background:
+        enabled: true
+        weight: 5
+      image_content:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions
