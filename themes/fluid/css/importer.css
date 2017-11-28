@@ -155,7 +155,16 @@ button[type=submit] {
   opacity: 0;
   transition: opacity 2s 1s, visibility 0s 3s; }
   .block--logo img {
-    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.35)); }
+    display: block; }
+
+body.bg-dark .block--logo img {
+  opacity: 0; }
+
+body.bg-dark .block--logo .field--name-body a {
+  display: block;
+  background: url(../images/logo-fluid-events-white.svg) no-repeat center center;
+  background-size: contain;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.35)); }
 
 .show-logo .block--logo {
   visibility: visible;
@@ -175,8 +184,7 @@ button[type=submit] {
   height: 10px;
   width: 24px;
   position: relative;
-  padding: 10px;
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.35)); }
+  padding: 7px 10px; }
   .show-menu:before, .show-menu:after {
     content: "";
     position: absolute;
@@ -184,19 +192,27 @@ button[type=submit] {
     left: 10px;
     height: 3px; }
   .show-menu:before {
-    top: 10px;
+    top: 7px;
     background-color: #17a8a2; }
   .show-menu:after {
-    bottom: 10px;
+    bottom: 7px;
     background-color: #03d0b6; }
+
+body.bg-dark .show-menu {
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.35)); }
+  body.bg-dark .show-menu:before, body.bg-dark .show-menu:after {
+    background-color: white; }
 
 .hide-menu {
   display: none;
   font-size: 0;
   width: 24px;
   height: 10px;
-  padding: 10px;
-  background: url(../images/icon-menu-close.svg) no-repeat center center;
+  padding: 7px 10px;
+  background: url(../images/icon-menu-close-color.svg) no-repeat center center; }
+
+body.bg-dark .hide-menu {
+  background-image: url(../images/icon-menu-close-white.svg);
   filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.35)); }
 
 .menu-open .show-menu {
@@ -218,13 +234,16 @@ button[type=submit] {
   margin-right: 8px; }
 
 .block--main-menu .menu a {
-  color: white;
+  color: #03d0b6;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 0.9em;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35); }
+  font-size: 0.9em; }
   .block--main-menu .menu a:hover {
     text-decoration: underline; }
+
+body.bg-dark .block--main-menu .menu a {
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35); }
 
 .block--social-menu {
   margin-left: 15px;
@@ -240,12 +259,20 @@ button[type=submit] {
     width: 24px;
     height: 24px;
     background-repeat: no-repeat;
-    background-position: center center;
-    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.35)); }
+    background-position: center center; }
   .block--social-menu .menu .ig {
-    background-image: url(../images/icon-ig-white.svg); }
+    background-image: url(../images/icon-ig-color.svg); }
   .block--social-menu .menu .tw {
-    background-image: url(../images/icon-tw-white.svg); }
+    background-image: url(../images/icon-tw-color.svg); }
+
+body.bg-dark .block--social-menu .menu a {
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.35)); }
+
+body.bg-dark .block--social-menu .menu .ig {
+  background-image: url(../images/icon-ig-white.svg); }
+
+body.bg-dark .block--social-menu .menu .tw {
+  background-image: url(../images/icon-tw-white.svg); }
 
 .block--custom-page-title {
   background-repeat: no-repeat;
@@ -347,6 +374,15 @@ button[type=submit] {
   .copyright a, .site-by-cci a {
     color: inherit; }
 
+.layout-main {
+  clear: both;
+  padding: 100px 25px;
+  margin: 0 auto;
+  max-width: 960px; }
+
+.block--default-page-title .page-title {
+  color: #03d0b6; }
+
 .block--collapsible-image-content {
   clear: both;
   position: relative;
@@ -419,6 +455,7 @@ button[type=submit] {
     -ms-transform: translateX(100%);
     transform: translateX(100%); }
   .block--collapsible-image-content .block-title {
+    color: white;
     text-transform: uppercase;
     font-size: 3.5em;
     font-weight: normal;
@@ -496,6 +533,7 @@ button[type=submit] {
     .block--image-content .block-content a {
       color: white; }
   .block--image-content .block-title {
+    color: white;
     text-transform: uppercase;
     font-size: 3.5em;
     font-weight: normal;
@@ -523,6 +561,11 @@ button[type=submit] {
       max-width: 100%;
       height: auto !important;
       margin: 0 auto; }
+
+.page-node-type-advanced-page .layout-main {
+  padding: 0;
+  margin: 0;
+  max-width: none; }
 
 .paragraph--type--basic-content {
   clear: both;
@@ -606,6 +649,11 @@ button[type=submit] {
     color: white; }
   .paragraph--type--content-with-background .field--name-field-body a {
     color: white; }
+
+.path-frontpage .layout-main {
+  padding: 0;
+  margin: 0;
+  max-width: none; }
 
 .block--home-services .services-list {
   text-align: center;

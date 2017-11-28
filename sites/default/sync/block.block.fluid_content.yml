@@ -9,7 +9,7 @@ dependencies:
     - fluid
 third_party_settings:
   block_class:
-    classes: ''
+    classes: block--main
 _core:
   default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
 id: fluid_content
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: ''
     negate: true
     context_mapping: {  }

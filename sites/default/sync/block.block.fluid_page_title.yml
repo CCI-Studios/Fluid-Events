@@ -9,7 +9,7 @@ dependencies:
     - fluid
 third_party_settings:
   block_class:
-    classes: block--page-title
+    classes: 'block--page-title block--default-page-title'
 _core:
   default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
 id: fluid_page_title

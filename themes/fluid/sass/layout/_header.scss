@@ -24,6 +24,20 @@
 
   img
   {
+    display: block;
+  }
+}
+body.bg-dark .block--logo
+{
+  img
+  {
+    opacity: 0;
+  }
+  .field--name-body a
+  {
+    display: block;
+    background: url(../images/logo-fluid-events-white.svg) no-repeat center center;
+    background-size: contain;
     filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.35));
   }
 }
@@ -53,8 +67,7 @@
   height: 10px;
   width: 24px;
   position: relative;
-  padding: 10px;
-  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.35));
+  padding: 7px 10px;
 
   &:before,
   &:after
@@ -67,13 +80,23 @@
   }
   &:before
   {
-    top: 10px;
+    top: 7px;
     background-color: #17a8a2;
   }
   &:after
   {
-    bottom: 10px;
+    bottom: 7px;
     background-color: #03d0b6;
+  }
+}
+body.bg-dark .show-menu
+{
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.35));
+
+  &:before,
+  &:after
+  {
+    background-color: white;
   }
 }
 .hide-menu
@@ -82,8 +105,12 @@
   font-size: 0;
   width: 24px;
   height: 10px;
-  padding: 10px;
-  background: url(../images/icon-menu-close.svg) no-repeat center center;
+  padding: 7px 10px;
+  background: url(../images/icon-menu-close-color.svg) no-repeat center center;
+}
+body.bg-dark .hide-menu
+{
+  background-image: url(../images/icon-menu-close-white.svg);
   filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.35));
 }
 .menu-open
@@ -123,11 +150,10 @@
     }
     a
     {
-      color: white;
+      color: #03d0b6;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 0.9em;
-      text-shadow: 1px 1px 1px rgba(0,0,0,0.35);
 
       &:hover
       {
@@ -135,6 +161,11 @@
       }
     }
   }
+}
+body.bg-dark .block--main-menu .menu a
+{
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.35);
 }
 
 .block--social-menu
@@ -159,19 +190,32 @@
       height: 24px;
       background-repeat: no-repeat;
       background-position: center center;
-      filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.35));
     }
     .ig
     {
-      background-image: url(../images/icon-ig-white.svg);
+      background-image: url(../images/icon-ig-color.svg);
     }
     .tw
     {
-      background-image: url(../images/icon-tw-white.svg);
+      background-image: url(../images/icon-tw-color.svg);
     }
   }
 }
-
+body.bg-dark .block--social-menu .menu
+{
+  a
+  {
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.35));
+  }
+  .ig
+  {
+    background-image: url(../images/icon-ig-white.svg);
+  }
+  .tw
+  {
+    background-image: url(../images/icon-tw-white.svg);
+  }
+}
 
 .block--custom-page-title
 {
