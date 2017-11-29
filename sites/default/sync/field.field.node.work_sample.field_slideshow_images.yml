@@ -1,0 +1,38 @@
+uuid: 0544f30a-b23e-45c5-a3a6-d11cf7a36be2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slideshow_images
+    - node.type.work_sample
+  module:
+    - image
+id: node.work_sample.field_slideshow_images
+field_name: field_slideshow_images
+entity_type: node
+bundle: work_sample
+label: 'Slideshow images'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,93 @@
+.node--work-sample--full
+{
+  .field--name-field-image
+  {
+    float: left;
+    width: 40%;
+    margin-right: 10%;
+
+    img
+    {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .page-title
+  {
+    color: #17a8a2;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .field--name-body
+  {
+    overflow: hidden;
+    margin-bottom: 100px;
+  }
+  .field--name-field-quote-text
+  {
+    clear: both;
+    margin: 100px auto 0 auto;
+    max-width: 740px;
+    text-align: center;
+
+    &:before
+    {
+      content: '“”';
+      display: block;
+      color: #03d0b6;
+      font-size: 4em;
+      line-height: 1;
+      height: 45px;
+    }
+  }
+  .field--name-field-quote-author
+  {
+    margin: 5px auto 0 auto;
+    max-width: 740px;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8em;
+  }
+  .field--name-field-slideshow-images
+  {
+    position: relative;
+
+    .field__item
+    {
+      width: 100%;
+    }
+    img
+    {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .slick-arrow
+    {
+      position: absolute;
+      top: 50%;
+      margin-top: -31px;
+      width: 58px;
+      height: 58px;
+      border: 2px solid #03d0b6;
+      border-radius: 0;
+      font-size: 0;
+      background: transparent no-repeat center center;
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
+      z-index: 1;
+    }
+    .slick-prev
+    {
+      left: -12px;
+      background-image: url(../images/arrow-left.svg);
+    }
+    .slick-next
+    {
+      right: -12px;
+      background-image: url(../images/arrow-right.svg);
+    }
+  }
+}

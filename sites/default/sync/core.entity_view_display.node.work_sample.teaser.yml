@@ -1,0 +1,55 @@
+uuid: 745998cc-eeaf-4f50-b8e0-bc4e46899f84
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.work_sample.body
+    - field.field.node.work_sample.field_image
+    - field.field.node.work_sample.field_organization
+    - field.field.node.work_sample.field_quote_author
+    - field.field.node.work_sample.field_quote_text
+    - field.field.node.work_sample.field_slideshow_images
+    - field.field.node.work_sample.field_teaser_background
+    - image.style.work_teaser_bg
+    - image.style.work_teaser_logo
+    - node.type.work_sample
+  module:
+    - image
+    - user
+id: node.work_sample.teaser
+targetEntityType: node
+bundle: work_sample
+mode: teaser
+content:
+  field_image:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: work_teaser_logo
+      image_link: ''
+    third_party_settings: {  }
+  field_organization:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_teaser_background:
+    type: image_url
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      image_style: work_teaser_bg
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_quote_author: true
+  field_quote_text: true
+  field_slideshow_images: true
+  links: true

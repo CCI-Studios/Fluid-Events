@@ -1,0 +1,28 @@
+uuid: 37531dc2-ee8d-4050-9288-0640cdba68ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: clients
+label: Clients
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      clients: clients
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+    auto_entityqueue:
+      auto_add: 1
+      insert_front: 0
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse_in_admin: false

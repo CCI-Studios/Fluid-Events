@@ -1,0 +1,70 @@
+uuid: ea275d93-9da9-40a2-b219-cad5592687c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.work_sample.body
+    - field.field.node.work_sample.field_image
+    - field.field.node.work_sample.field_organization
+    - field.field.node.work_sample.field_quote_author
+    - field.field.node.work_sample.field_quote_text
+    - field.field.node.work_sample.field_slideshow_images
+    - field.field.node.work_sample.field_teaser_background
+    - node.type.work_sample
+  module:
+    - image
+    - text
+    - user
+id: node.work_sample.default
+targetEntityType: node
+bundle: work_sample
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_quote_author:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_quote_text:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_slideshow_images:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_organization: true
+  field_teaser_background: true

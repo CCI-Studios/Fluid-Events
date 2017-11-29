@@ -1,0 +1,19 @@
+uuid: 15827427-ebcb-492e-b5f4-67fb9788fbde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quote_author
+    - node.type.work_sample
+id: node.work_sample.field_quote_author
+field_name: field_quote_author
+entity_type: node
+bundle: work_sample
+label: 'Quote author'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

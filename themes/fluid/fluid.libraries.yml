@@ -9,3 +9,18 @@ global:
   dependencies:
     - core/classList
     - core/jquery
+
+slick:
+  version: 1.x
+  css:
+    theme:
+      css/slick.css: {}
+  js:
+    js/slick.js: {}
+
+work:
+  version: 1.x
+  js:
+    js/work.js: {}
+  dependencies:
+    - fluid/slick

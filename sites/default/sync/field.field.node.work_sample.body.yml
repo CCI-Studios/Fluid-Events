@@ -1,0 +1,22 @@
+uuid: d291fa2a-3436-4507-9c60-ba1125c2c124
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.work_sample
+  module:
+    - text
+id: node.work_sample.body
+field_name: body
+entity_type: node
+bundle: work_sample
+label: 'Event details'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

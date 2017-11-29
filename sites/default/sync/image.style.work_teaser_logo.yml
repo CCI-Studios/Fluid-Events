@@ -1,0 +1,28 @@
+uuid: b840553a-15a4-409f-9a70-e00f0f1b38c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - image_effects
+name: work_teaser_logo
+label: 'Work teaser logo'
+effects:
+  7cd00a8b-8fc2-4e27-9733-0d7e77b36867:
+    uuid: 7cd00a8b-8fc2-4e27-9733-0d7e77b36867
+    id: image_scale
+    weight: -10
+    data:
+      width: 280
+      height: 120
+      upscale: false
+  f23402ae-2644-4f5c-afc5-8bb4a2a30fbf:
+    uuid: f23402ae-2644-4f5c-afc5-8bb4a2a30fbf
+    id: image_effects_color_shift
+    weight: -8
+    data:
+      RGB: '#FFFFFF'
+  293aec2d-7177-4ff8-b253-e5713b2160de:
+    uuid: 293aec2d-7177-4ff8-b253-e5713b2160de
+    id: image_desaturate
+    weight: -9
+    data: {  }

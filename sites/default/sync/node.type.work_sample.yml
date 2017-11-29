@@ -1,0 +1,17 @@
+uuid: 1c3872a7-9d87-4bce-a293-3fee721de7f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Work sample'
+type: work_sample
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

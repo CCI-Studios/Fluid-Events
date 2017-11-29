@@ -1,0 +1,20 @@
+uuid: 204bee55-fb2e-4625-9712-afa01f210eb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.clients.field_image
+    - node.type.clients
+  module:
+    - user
+id: node.clients.teaser
+targetEntityType: node
+bundle: clients
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_image: true

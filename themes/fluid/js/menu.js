@@ -15,7 +15,8 @@
       ".paragraph--type--content-with-background, "+
       ".block--splash-logo, "+
       ".block--collapsible-image-content, "+
-      ".block--image-content"
+      ".block--image-content, "+
+      ".view-work"
     )
     .each(function(){
       blockPositions.push({
