@@ -5,16 +5,38 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.clients.field_image
+    - field.field.node.clients.field_link
+    - image.style.client_logo
     - node.type.clients
   module:
+    - image
+    - link
     - user
 id: node.clients.teaser
 targetEntityType: node
 bundle: clients
 mode: teaser
 content:
-  links:
-    weight: 100
+  field_image:
+    type: image
+    weight: 0
     region: content
+    label: hidden
+    settings:
+      image_style: client_logo
+      image_link: ''
+    third_party_settings: {  }
+  field_link:
+    type: link
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
 hidden:
-  field_image: true
+  links: true

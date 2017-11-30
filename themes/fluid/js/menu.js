@@ -26,7 +26,8 @@
     });
     $(".block--main, "+
       ".paragraph--type--basic-content, "+
-      ".paragraph--type--image-content"
+      ".paragraph--type--image-content, "+
+      ".block--clients"
     )
     .each(function(){
       blockPositions.push({

@@ -101,3 +101,36 @@
     margin: 0 auto;
   }
 }
+
+.block--clients
+{
+  h2
+  {
+    text-align: center;
+  }
+  &:after
+  {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+.view-clients
+{
+  .views-row
+  {
+    width: 20%;
+    float: left;
+
+    &:nth-child(5n + 1)
+    {
+      clear: left;
+    }
+  }
+  img
+  {
+    display: block;
+    width: 80%;
+    height: auto;
+  }
+}
