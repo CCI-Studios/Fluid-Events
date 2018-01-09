@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.basic_content
     - paragraphs.paragraphs_type.content_with_background
     - paragraphs.paragraphs_type.image_content
+    - paragraphs.paragraphs_type.webform
   module:
     - entity_reference_revisions
 id: node.advanced_page.field_sections
@@ -28,6 +29,7 @@ settings:
       basic_content: basic_content
       content_with_background: content_with_background
       image_content: image_content
+      webform: webform
     target_bundles_drag_drop:
       basic_content:
         enabled: true
@@ -38,4 +40,7 @@ settings:
       image_content:
         enabled: true
         weight: 6
+      webform:
+        enabled: true
+        weight: 8
 field_type: entity_reference_revisions

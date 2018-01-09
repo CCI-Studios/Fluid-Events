@@ -144,3 +144,15 @@
     }
   }
 }
+
+.paragraph--type--webform
+{
+  clear: both;
+  margin: 100px 25px;
+
+  & > div
+  {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+}

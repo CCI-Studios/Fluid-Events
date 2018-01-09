@@ -1,0 +1,35 @@
+uuid: 32d3dae4-3346-444a-9363-2edc704181d0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:page_title:4162bc0a-cc03-4d1e-89cf-44d8e243ddd8'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - fluid
+third_party_settings:
+  block_class:
+    classes: ''
+id: servicespagetitle
+theme: fluid
+region: before_content
+weight: 0
+provider: null
+plugin: 'block_content:4162bc0a-cc03-4d1e-89cf-44d8e243ddd8'
+settings:
+  id: 'block_content:4162bc0a-cc03-4d1e-89cf-44d8e243ddd8'
+  label: 'Services page title'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/services\r\n/node/18"
+    negate: false
+    context_mapping: {  }
