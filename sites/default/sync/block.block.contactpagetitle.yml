@@ -1,0 +1,35 @@
+uuid: c0b022fe-c9b8-4693-8183-62fe12ea96c0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:page_title:e1226192-ac6b-4efb-a24f-bf688ee380f3'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - fluid
+third_party_settings:
+  block_class:
+    classes: ''
+id: contactpagetitle
+theme: fluid
+region: before_content
+weight: 0
+provider: null
+plugin: 'block_content:e1226192-ac6b-4efb-a24f-bf688ee380f3'
+settings:
+  id: 'block_content:e1226192-ac6b-4efb-a24f-bf688ee380f3'
+  label: 'Contact page title'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/contact\r\n/node/19"
+    negate: false
+    context_mapping: {  }

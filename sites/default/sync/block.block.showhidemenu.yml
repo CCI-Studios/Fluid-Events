@@ -15,7 +15,7 @@ third_party_settings:
 id: showhidemenu
 theme: fluid
 region: header_right
-weight: 0
+weight: -11
 provider: null
 plugin: 'block_content:79dfd9b2-3718-47a6-8e3b-ab584b31842f'
 settings:
