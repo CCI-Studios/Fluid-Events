@@ -6,6 +6,17 @@
     width: 40%;
     margin-right: 10%;
 
+    &
+    {
+      @media (max-width: 640px)
+      {
+        float: none;
+        margin: 0 auto 2em auto;
+        width: 100%;
+        max-width: 360px;
+      }
+    }
+
     img
     {
       display: block;

@@ -9,6 +9,16 @@
   background-size: 100% auto;
   transition: 1s background-size;
 
+  &
+  {
+    @media (max-width: 720px)
+    {
+      float: none;
+      width: 100%;
+      padding-bottom: 60%;
+    }
+  }
+
   &:hover
   {
     background-size: 110% auto;
@@ -125,6 +135,23 @@
     &:nth-child(5n + 1)
     {
       clear: left;
+    }
+    &
+    {
+      @media (max-width: 720px)
+      {
+        width: 50%;
+        margin-bottom: 20px;
+
+        &:nth-child(5n + 1)
+        {
+          clear: none;
+        }
+        &:nth-child(2n + 1)
+        {
+          clear: left;
+        }
+      }
     }
   }
   img

@@ -26,11 +26,29 @@
 .block--footer-logo
 {
   float: left;
+
+  &
+  {
+    @media (max-width: 860px)
+    {
+      float: none;
+      text-align: center;
+    }
+  }
 }
 
 .block--footer-social-menu
 {
   float: right;
+
+  &
+  {
+    @media (max-width: 860px)
+    {
+      float: none;
+      text-align: center;
+    }
+  }
 
   .menu
   {
