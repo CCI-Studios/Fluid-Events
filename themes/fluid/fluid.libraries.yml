@@ -6,6 +6,7 @@ global:
   js:
     js/menu.js: {}
     js/collapsible-block.js: {}
+    js/animations.js: {}
   dependencies:
     - core/classList
     - core/jquery

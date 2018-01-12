@@ -26,5 +26,11 @@
     border-radius: 0;
     font-size: 1.15em;
     background: white;
+
+    &:hover, &:focus
+    {
+      background: #03d0b6;
+      color: white !important;
+    }
   }
 }

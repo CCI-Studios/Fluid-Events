@@ -66,6 +66,15 @@ button[type=submit]
   box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
   font-size: 1.15em;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+  transition: all 0.4s;
+
+  &:hover,
+  &:focus
+  {
+    background: white;
+    color: #03d0b6 !important;
+    text-shadow: none;
+  }
 }
 .teal-button
 {
@@ -73,4 +82,12 @@ button[type=submit]
   color: #03d0b6;
   box-shadow: none;
   text-shadow: none;
+  transition: all 0.4s;
+
+  &:hover,
+  &:focus
+  {
+    background: #03d0b6;
+    color: white !important;
+  }
 }
