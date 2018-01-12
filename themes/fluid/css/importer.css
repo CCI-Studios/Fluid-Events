@@ -937,7 +937,8 @@ body.bg-dark .block--social-menu .menu .tw {
 .node--work-sample--full .field--name-field-image {
   float: left;
   width: 40%;
-  margin-right: 10%; }
+  margin-right: 10%;
+  text-align: center; }
   @media (max-width: 640px) {
     .node--work-sample--full .field--name-field-image {
       float: none;
@@ -945,7 +946,7 @@ body.bg-dark .block--social-menu .menu .tw {
       width: 100%;
       max-width: 360px; } }
   .node--work-sample--full .field--name-field-image img {
-    display: block;
+    display: inline-block;
     max-width: 100%;
     height: auto; }
 
