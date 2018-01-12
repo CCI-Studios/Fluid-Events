@@ -42,34 +42,40 @@ p {
   p:last-child {
     margin-bottom: 0; }
 
-.layout-main {
+.layout-container {
+  overflow: hidden;
   background-color: white; }
-  .layout-main ul, .layout-main ol {
-    margin-left: 30px;
-    margin-bottom: 1.5em; }
-  .layout-main li {
-    margin-bottom: 0.25em; }
-  .layout-main h2 {
-    color: #17a8a2;
-    text-transform: uppercase;
-    font-weight: normal;
-    line-height: 1.2;
-    margin-bottom: 1.5em;
-    font-size: 1.8em; }
-  .layout-main h3 {
-    color: #17a8a2;
-    text-transform: uppercase;
-    font-weight: normal;
-    line-height: 1.2;
-    margin-bottom: 1.5em;
-    font-size: 1.4em; }
-  .layout-main h3 {
-    color: #17a8a2;
-    text-transform: uppercase;
-    font-weight: normal;
-    line-height: 1.2;
-    margin-bottom: 1.5em;
-    font-size: 1em; }
+
+.layout-main ul, .layout-main ol {
+  margin-left: 30px;
+  margin-bottom: 1.5em; }
+
+.layout-main li {
+  margin-bottom: 0.25em; }
+
+.layout-main h2 {
+  color: #17a8a2;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 1.5em;
+  font-size: 1.8em; }
+
+.layout-main h3 {
+  color: #17a8a2;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 1.5em;
+  font-size: 1.4em; }
+
+.layout-main h3 {
+  color: #17a8a2;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 1.5em;
+  font-size: 1em; }
 
 input[type=text],
 input[type=password],
