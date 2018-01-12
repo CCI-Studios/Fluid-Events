@@ -915,7 +915,9 @@ body.bg-dark .block--social-menu .menu .tw {
 
 .view-clients .views-row {
   width: 20%;
-  float: left; }
+  float: left;
+  margin-bottom: 25px;
+  text-align: center; }
   .view-clients .views-row:nth-child(5n + 1) {
     clear: left; }
   @media (max-width: 720px) {
@@ -928,8 +930,8 @@ body.bg-dark .block--social-menu .menu .tw {
         clear: left; } }
 
 .view-clients img {
-  display: block;
-  width: 80%;
+  display: inline-block;
+  max-width: 80%;
   height: auto; }
 
 .node--work-sample--full .field--name-field-image {

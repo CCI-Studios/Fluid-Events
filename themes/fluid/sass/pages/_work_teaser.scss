@@ -131,6 +131,8 @@
   {
     width: 20%;
     float: left;
+    margin-bottom: 25px;
+    text-align: center;
 
     &:nth-child(5n + 1)
     {
@@ -156,8 +158,8 @@
   }
   img
   {
-    display: block;
-    width: 80%;
+    display: inline-block;
+    max-width: 80%;
     height: auto;
   }
 }

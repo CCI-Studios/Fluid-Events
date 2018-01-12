@@ -11,6 +11,7 @@
     $('.block--splash-logo .logo2').attr('style', 'width:'+$('.block--splash-logo .logo-container').width()+'px !important');
   }
   function onScroll() {
+    //fade in content blocks
     var scrollTop = $(window).scrollTop() + $(window).height();
     $('.paragraph--type--basic-content, .paragraph--type--image-content, .paragraph--type--content-with-background, .block--collapsible-image-content, .block--image-content').each(function(){
       var threshold = 250;
