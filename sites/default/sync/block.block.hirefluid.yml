@@ -1,0 +1,35 @@
+uuid: 9b49a86e-783b-4e7d-8f54-1a9a3f2628dc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6ccfd493-9efe-4744-955f-34463e698e7d'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - fluid
+third_party_settings:
+  block_class:
+    classes: block--hire-fluid
+id: hirefluid
+theme: fluid
+region: splash
+weight: 0
+provider: null
+plugin: 'block_content:6ccfd493-9efe-4744-955f-34463e698e7d'
+settings:
+  id: 'block_content:6ccfd493-9efe-4744-955f-34463e698e7d'
+  label: 'Hire Fluid'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

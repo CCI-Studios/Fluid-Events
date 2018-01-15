@@ -171,6 +171,7 @@ button[type=submit] {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
   visibility: hidden;
   opacity: 0;
   transition: opacity 2s 1s, visibility 0s 3s; }
@@ -209,17 +210,21 @@ body.bg-dark .block--logo .field--name-body a {
   width: 24px;
   position: relative;
   padding: 7px 10px; }
+  @media (max-width: 720px) {
+    .show-menu {
+      height: 25px; } }
   .show-menu:before, .show-menu:after {
     content: "";
     position: absolute;
     width: 24px;
     left: 10px;
-    height: 3px; }
+    height: 3px;
+    top: 50%; }
   .show-menu:before {
-    top: 7px;
+    margin-top: -5px;
     background-color: #17a8a2; }
   .show-menu:after {
-    bottom: 7px;
+    margin-top: 5px;
     background-color: #03d0b6; }
 
 body.bg-dark .show-menu {
@@ -233,7 +238,11 @@ body.bg-dark .show-menu {
   width: 24px;
   height: 10px;
   padding: 7px 10px;
-  background: url(../images/icon-menu-close-color.svg) no-repeat center center; }
+  background: url(../images/icon-menu-close-color.svg) no-repeat center center;
+  margin-bottom: 15px; }
+  @media (max-width: 720px) {
+    .hide-menu {
+      height: 25px; } }
 
 body.bg-dark .hide-menu {
   background-image: url(../images/icon-menu-close-white.svg);
@@ -251,15 +260,10 @@ body.bg-dark .hide-menu {
 .menu-open .block--main-menu, .menu-open .block--social-menu {
   display: block; }
 
-@media (max-width: 720px) {
-  .block--main-menu {
-    clear: right;
-    margin-right: 60px;
-    margin-top: 20px; } }
-
 @media (max-width: 480px) {
   .block--main-menu {
-    margin-right: 0; } }
+    margin-top: 10px;
+    clear: right; } }
 
 .block--main-menu .menu li {
   list-style: none;
@@ -281,10 +285,7 @@ body.bg-dark .block--main-menu .menu a {
 
 .block--social-menu {
   margin-left: 15px;
-  margin-right: 25px; }
-  @media (max-width: 720px) {
-    .block--social-menu {
-      margin-right: 15px; } }
+  clear: right; }
   .block--social-menu .menu li {
     display: inline-block;
     vertical-align: top;
@@ -634,10 +635,16 @@ body.bg-dark .block--social-menu .menu .tw {
       height: auto !important;
       margin: 0 auto;
       opacity: 0;
+      -webkit-transform: scale(0.9);
+      -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
       transform: scale(0.9);
       transition: all 1.7s 0.25s; }
     .block--splash-logo .block-content .logo1 {
       width: 100%;
+      -webkit-transition: all 0s 2.25s;
+      -moz-transition: all 0s 2.25s;
+      -ms-transition: all 0s 2.25s;
       transition: all 0s 2.25s; }
     .block--splash-logo .block-content .logo2 {
       position: absolute;
@@ -650,14 +657,23 @@ body.bg-dark .block--social-menu .menu .tw {
       width: 100%;
       height: 100%;
       overflow: hidden;
+      -webkit-transition: all 1s 3s;
+      -moz-transition: all 1s 3s;
+      -ms-transition: all 1s 3s;
       transition: all 1s 3s; }
     .block--splash-logo .block-content .tagline {
       opacity: 0;
       font-size: 1.4em;
       padding-top: 25px;
+      -webkit-transition: all 1.5s 1.5s;
+      -moz-transition: all 1.5s 1.5s;
+      -ms-transition: all 1.5s 1.5s;
       transition: all 1.5s 1.5s; }
   .block--splash-logo.animate .block-content img {
     opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1); }
   .block--splash-logo.animate .block-content .tagline {
     font-size: 1.55em;
@@ -665,6 +681,37 @@ body.bg-dark .block--social-menu .menu .tw {
   .block--splash-logo.animate .block-content .logo2-container {
     left: 100%;
     width: 0; }
+
+.hire-fluid {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  margin-left: -89px;
+  display: block;
+  text-transform: uppercase;
+  width: 176px;
+  border: 2px solid #03d0b6;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 101;
+  transition: background 0.5s; }
+  @media (max-width: 400px) {
+    .hire-fluid {
+      width: 120px;
+      margin-left: -62px; } }
+  @media (max-width: 335px) {
+    .hire-fluid {
+      width: 104px;
+      margin-left: -54px; } }
+  .hire-fluid:hover, .hire-fluid:focus {
+    background: #03d0b6; }
+  .hire-fluid.fixed {
+    position: fixed;
+    top: 25px; }
 
 .page-node-type-advanced-page .layout-main {
   padding: 0;

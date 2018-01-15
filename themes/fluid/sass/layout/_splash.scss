@@ -93,3 +93,47 @@
     }
   }
 }
+
+.hire-fluid
+{
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  margin-left: -89px;
+  display: block;
+  text-transform: uppercase;
+  width: 176px;
+  border: 2px solid #03d0b6;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 101;
+  transition: background 0.5s;
+
+  &
+  {
+    @media (max-width: 400px)
+    {
+      width: 120px;
+      margin-left: -62px;
+    }
+    @media (max-width: 335px)
+    {
+      width: 104px;
+      margin-left: -54px;
+    }
+  }
+
+  &:hover, &:focus
+  {
+    background: #03d0b6;
+  }
+  &.fixed
+  {
+    position: fixed;
+    top: 25px;
+  }
+}
