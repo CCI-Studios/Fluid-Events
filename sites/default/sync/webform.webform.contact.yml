@@ -66,9 +66,9 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: page
+  confirmation_type: inline
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: "<p>THANK YOU!</p>\r\n\r\n<p>We have received your message and will get back to you as soon as we can!</p>"
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: false
@@ -148,7 +148,7 @@ handlers:
       from_mail: default
       from_options: {  }
       from_name: default
-      subject: default
+      subject: 'Webform submission from: [webform:title]'
       body: '[webform_submission:values]'
       excluded_elements: {  }
       ignore_access: false
