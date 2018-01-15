@@ -3,6 +3,7 @@
   var top;
   $(function(){
     $button = $('.hire-fluid');
+    if (!$button.length) return;
     top = $button.position().top;
     $(window).scroll(onScroll);
   });
