@@ -1,7 +1,12 @@
 uuid: 5c8c3341-991c-4dfc-8299-9149cd1e73ec
 langcode: en
 status: open
-dependencies: {  }
+dependencies:
+  module:
+    - honeypot
+third_party_settings:
+  honeypot:
+    honeypot: true
 open: null
 close: null
 uid: 1
@@ -66,9 +71,9 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: inline
-  confirmation_title: ''
-  confirmation_message: "<p>THANK YOU!</p>\r\n\r\n<p>We have received your message and will get back to you as soon as we can!</p>"
+  confirmation_type: page
+  confirmation_title: 'THANK YOU!'
+  confirmation_message: '<p>We have received your message and will get back to you as soon as we can!</p>'
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: false
