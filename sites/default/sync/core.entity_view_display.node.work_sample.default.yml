@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.work_sample.body
+    - field.field.node.work_sample.field_event_details_2
     - field.field.node.work_sample.field_image
     - field.field.node.work_sample.field_organization
     - field.field.node.work_sample.field_quote_author
@@ -27,6 +28,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_event_details_2:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_image:
     weight: 1
     label: hidden
@@ -37,7 +45,7 @@ content:
     type: image
     region: content
   field_quote_author:
-    weight: 5
+    weight: 6
     label: hidden
     settings:
       link_to_entity: false
@@ -45,14 +53,14 @@ content:
     type: string
     region: content
   field_quote_text:
-    weight: 4
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_slideshow_images:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       image_style: ''

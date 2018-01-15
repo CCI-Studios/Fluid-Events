@@ -1023,6 +1023,10 @@ body.bg-dark .block--social-menu .menu .tw {
   overflow: hidden;
   margin-bottom: 100px; }
 
+.node--work-sample--full .field--name-field-event-details-2 {
+  clear: both;
+  margin-bottom: 100px; }
+
 .node--work-sample--full .field--name-field-quote-text {
   clear: both;
   margin: 100px auto 0 auto;

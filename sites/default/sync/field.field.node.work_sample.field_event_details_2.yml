@@ -1,0 +1,21 @@
+uuid: 8ebd7484-95b1-4848-9c2d-4e93b258ed51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_details_2
+    - node.type.work_sample
+  module:
+    - text
+id: node.work_sample.field_event_details_2
+field_name: field_event_details_2
+entity_type: node
+bundle: work_sample
+label: 'Event details (section 2)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
