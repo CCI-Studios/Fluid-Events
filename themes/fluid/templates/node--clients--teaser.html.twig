@@ -84,9 +84,9 @@
 <div{{ attributes.addClass(classes).removeAttribute("role") }}>
 
   <div{{ content_attributes.addClass('node__content') }} title="{{ node.getTitle }}">
-    {% if node.field_link.0 %}<a href="{{node.field_link.uri}}" target="_blank">{% endif %}
+    {% if node.field_link.uri %}<a href="{{node.field_link.uri}}" target="_blank">{% endif %}
     {{ content.field_image }}
-    {% if node.field_link.0 %}</a>{% endif %}
+    {% if node.field_link.uri %}</a>{% endif %}
   </div>
 
 </div>
