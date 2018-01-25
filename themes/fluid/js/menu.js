@@ -13,8 +13,6 @@
     blockPositions = [];
     $(".block--custom-page-title, "+
       ".paragraph--type--content-with-background, "+
-      ".block--splash-logo, "+
-      ".block--collapsible-image-content, "+
       ".block--image-content, "+
       ".view-work"
     )
@@ -25,8 +23,10 @@
       });
     });
     $(".block--main, "+
+      ".block--splash-logo, "+
       ".paragraph--type--basic-content, "+
       ".paragraph--type--image-content, "+
+      ".block--collapsible-image-content, "+
       ".block--clients"
     )
     .each(function(){
@@ -47,6 +47,7 @@
     } else {
       $("body").addClass("show-logo");
     }
+    return;
 
     //show the white or colour logo & main menu
     if (blockPositions.length < 2) {
