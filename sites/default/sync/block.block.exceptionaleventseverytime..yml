@@ -16,7 +16,7 @@ third_party_settings:
 id: exceptionaleventseverytime.
 theme: fluid
 region: after_content
-weight: -7
+weight: -12
 provider: null
 plugin: 'block_content:a11a77d7-7c1c-449a-97aa-927b04d0a0bd'
 settings:

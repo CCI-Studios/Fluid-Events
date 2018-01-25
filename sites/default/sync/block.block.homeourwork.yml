@@ -16,7 +16,7 @@ third_party_settings:
 id: homeourwork
 theme: fluid
 region: after_content
-weight: -5
+weight: -10
 provider: null
 plugin: 'block_content:7af4decd-93cc-4bd2-8c56-432690704530'
 settings:

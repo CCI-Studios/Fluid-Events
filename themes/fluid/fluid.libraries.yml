@@ -11,6 +11,7 @@ global:
   dependencies:
     - core/classList
     - core/jquery
+    - fluid/testimonials
 
 slick:
   version: 1.x
@@ -24,5 +25,12 @@ work:
   version: 1.x
   js:
     js/work.js: {}
+  dependencies:
+    - fluid/slick
+
+testimonials:
+  version: 1.x
+  js:
+    js/testimonials.js: {}
   dependencies:
     - fluid/slick

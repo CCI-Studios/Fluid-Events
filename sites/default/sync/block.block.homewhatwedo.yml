@@ -16,7 +16,7 @@ third_party_settings:
 id: homewhatwedo
 theme: fluid
 region: after_content
-weight: -6
+weight: -11
 provider: null
 plugin: 'block_content:2fa0d941-f75a-4f7c-8c8c-cd3ff4ef4699'
 settings:

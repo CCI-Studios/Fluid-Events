@@ -1,6 +1,6 @@
 uuid: 5186b695-34cb-4183-9803-54943b21611e
 langcode: en
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:image_content_block:3787119a-a84e-4b18-bd73-a31da1b824d2'
@@ -16,7 +16,7 @@ third_party_settings:
 id: homequote
 theme: fluid
 region: after_content
-weight: 0
+weight: -8
 provider: null
 plugin: 'block_content:3787119a-a84e-4b18-bd73-a31da1b824d2'
 settings:

@@ -16,7 +16,7 @@ third_party_settings:
 id: homecontact
 theme: fluid
 region: after_content
-weight: 0
+weight: -6
 provider: null
 plugin: 'block_content:de05e657-a44a-4a53-8c40-cadd78df2bb4'
 settings:

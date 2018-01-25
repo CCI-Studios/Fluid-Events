@@ -897,6 +897,72 @@ body.bg-dark .block--social-menu .menu .tw {
 .block--home-quote .block-content em {
   font-size: 0.875em; }
 
+.block--testimonials {
+  background: url(../images/bg-home-testimonials.jpg) no-repeat center center;
+  background-size: cover;
+  clear: both;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 100px 50px;
+  color: white; }
+  @media (min-height: 800px) and (min-width: 760px) {
+    .block--testimonials {
+      min-height: 800px;
+      min-height: 100vh; } }
+  .block--testimonials > div {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.55);
+    position: relative;
+    z-index: 1;
+    text-align: center; }
+    @media (min-height: 800px) and (min-width: 760px) {
+      .block--testimonials > div {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        width: 100%;
+        max-width: 1010px;
+        box-sizing: border-box;
+        padding: 0 50px; } }
+  .block--testimonials .node--type-testimonial:before {
+    content: "";
+    display: block;
+    height: 60px;
+    background: url(../images/icon-quotes.svg) no-repeat top center;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.55)); }
+  .block--testimonials .field--name-body {
+    margin-bottom: 1.5em; }
+  .block--testimonials .field--name-field-byline {
+    font-style: italic;
+    font-size: 0.875em; }
+  .block--testimonials .slick-arrow {
+    font-size: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    margin-top: -25px;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  .block--testimonials .slick-prev {
+    background-image: url(../images/icon-content-expand.svg);
+    left: -50px; }
+  .block--testimonials .slick-next {
+    background-image: url(../images/icon-content-collapse.svg);
+    right: -50px; }
+
 .node--work-sample--teaser {
   float: left;
   width: 50%;

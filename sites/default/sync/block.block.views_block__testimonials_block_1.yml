@@ -1,9 +1,9 @@
-uuid: 69e14137-d428-462a-92df-b88304670473
+uuid: f794798d-7234-4b40-868c-56289a6b6f66
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.clients
+    - views.view.testimonials
   module:
     - block_class
     - system
@@ -12,23 +12,23 @@ dependencies:
     - fluid
 third_party_settings:
   block_class:
-    classes: block--clients
-id: views_block__clients_block_1
+    classes: block--testimonials
+id: views_block__testimonials_block_1
 theme: fluid
 region: after_content
-weight: -9
+weight: -7
 provider: null
-plugin: 'views_block:clients-block_1'
+plugin: 'views_block:testimonials-block_1'
 settings:
-  id: 'views_block:clients-block_1'
+  id: 'views_block:testimonials-block_1'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: /our-work
+    pages: '<front>'
     negate: false
     context_mapping: {  }
