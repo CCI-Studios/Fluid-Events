@@ -166,13 +166,10 @@ button[type=submit] {
   z-index: 100; }
   @media (max-width: 720px) {
     .layout-top {
-      padding: 25px;
-      z-index: 103; } }
+      padding: 25px; } }
   .layout-top > div {
-    position: relative; }
-    @media (max-width: 720px) {
-      .layout-top > div {
-        z-index: 103; } }
+    position: relative;
+    z-index: 1; }
 
 .block--logo {
   position: absolute;
@@ -787,6 +784,10 @@ body.bg-dark .block--social-menu .menu .tw {
   .hire-fluid.fixed {
     position: fixed;
     top: 25px; }
+
+@media (max-width: 720px) {
+  .menu-open .hire-fluid {
+    z-index: 1; } }
 
 .page-node-type-advanced-page .layout-main {
   padding: 0;

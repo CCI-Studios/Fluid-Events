@@ -151,3 +151,10 @@
     top: 25px;
   }
 }
+.menu-open .hire-fluid
+{
+  @media (max-width: 720px)
+  {
+    z-index: 1;
+  }
+}

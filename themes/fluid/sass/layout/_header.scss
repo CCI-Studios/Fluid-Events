@@ -12,21 +12,13 @@
     @media (max-width: 720px)
     {
       padding: 25px;
-      z-index: 103;
     }
   }
 
   & > div
   {
     position: relative;
-
-    &
-    {
-      @media (max-width: 720px)
-      {
-        z-index: 103;
-      }
-    }
+    z-index: 1;
   }
 }
 
