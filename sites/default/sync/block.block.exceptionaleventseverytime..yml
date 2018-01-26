@@ -21,7 +21,7 @@ provider: null
 plugin: 'block_content:a11a77d7-7c1c-449a-97aa-927b04d0a0bd'
 settings:
   id: 'block_content:a11a77d7-7c1c-449a-97aa-927b04d0a0bd'
-  label: 'Exceptional Events Everytime.'
+  label: 'Exceptional Experience Every Time.'
   provider: block_content
   label_display: visible
   status: true

@@ -12,12 +12,21 @@
     @media (max-width: 720px)
     {
       padding: 25px;
+      z-index: 103;
     }
   }
 
   & > div
   {
     position: relative;
+
+    &
+    {
+      @media (max-width: 720px)
+      {
+        z-index: 103;
+      }
+    }
   }
 }
 
@@ -77,14 +86,7 @@ body.bg-dark .block--logo
   top: 0;
   right: 0;
   width: 100%;
-
-  &
-  {
-    @media (max-width: 480px)
-    {
-      right: -25px;
-    }
-  }
+  z-index: 103;
 
   .block
   {
@@ -148,13 +150,17 @@ body.bg-dark .show-menu
   height: 10px;
   padding: 7px 10px;
   background: url(../images/icon-menu-close-color.svg) no-repeat center center;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.35));
   margin-bottom: 15px;
+  position: relative;
+  z-index: 104;
 
   &
   {
     @media (max-width: 720px)
     {
       height: 25px;
+      background-image: url(../images/icon-menu-close-white.svg);
     }
   }
 }
@@ -185,16 +191,43 @@ body.bg-dark .hide-menu
   {
     display: block;
   }
+  &
+  {
+    @media (max-width: 720px)
+    {
+      .region-header-right
+      {
+        &:before
+        {
+          content: "";
+          position: fixed;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          background: rgba(67,188,176,0.9);
+          background: transparent url(../images/bg-menu.png) no-repeat center center;
+          background-size: cover;
+          z-index: 102;
+        }
+      }
+    }
+  }
 }
 
 .block--main-menu
 {
+  position: relative;
+  z-index: 103;
+
   &
   {
-    @media (max-width: 480px)
+    @media (max-width: 720px)
     {
-      float: none !important;
-      clear: both;
+      position: fixed;
+      top: 20%;
+      left: 0;
+      right: 0;
     }
   }
 
@@ -205,14 +238,12 @@ body.bg-dark .hide-menu
       list-style: none;
       display: inline-block;
       vertical-align: top;
-      margin-right: 8px;
 
       &
       {
-        @media (max-width: 480px)
+        @media (max-width: 720px)
         {
           display: block;
-          text-align: center;
         }
       }
     }
@@ -222,10 +253,38 @@ body.bg-dark .hide-menu
       text-decoration: none;
       text-transform: uppercase;
       font-size: 0.9em;
+      font-weight: 600;
+      margin-right: 8px;
+
+      &
+      {
+        @media (max-width: 720px)
+        {
+          margin-right: 0;
+          color: white;
+          line-height: 1;
+          display: block;
+          text-align: center;
+          padding: 12px 25px;
+          text-shadow: 1px 1px 2px rgba(0,0,0,0.35);
+        }
+      }
 
       &:hover
       {
         text-decoration: underline;
+      }
+    }
+  }
+  .mobile-only
+  {
+    display: none;
+
+    &
+    {
+      @media (max-width: 720px)
+      {
+        display: block;
       }
     }
   }
@@ -243,10 +302,15 @@ body.bg-dark .block--main-menu .menu a
 
   &
   {
-    @media (max-width: 480px)
+    @media (max-width: 720px)
     {
-      clear: none;
-      margin-top: 10px;
+      position: fixed;
+      z-index: 103;
+      top: 35px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      margin: 0;
     }
   }
 
@@ -257,13 +321,14 @@ body.bg-dark .block--main-menu .menu a
       display: inline-block;
       vertical-align: top;
       list-style: none;
-      margin-right: 8px;
+      margin-right: 12px;
 
       &
       {
-        @media (max-width: 360px)
+        @media (max-width: 720px)
         {
-          margin-right: 0;
+          margin: 0 6px;
+          filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.35));
         }
       }
     }
@@ -275,14 +340,31 @@ body.bg-dark .block--main-menu .menu a
       height: 24px;
       background-repeat: no-repeat;
       background-position: center center;
+      background-size: contain;
     }
     .ig
     {
       background-image: url(../images/icon-ig-color.svg);
+
+      &
+      {
+        @media (max-width: 720px)
+        {
+          background-image: url(../images/icon-ig-white.svg);
+        }
+      }
     }
     .tw
     {
       background-image: url(../images/icon-tw-color.svg);
+
+      &
+      {
+        @media (max-width: 720px)
+        {
+          background-image: url(../images/icon-tw-white.svg);
+        }
+      }
     }
   }
 }
