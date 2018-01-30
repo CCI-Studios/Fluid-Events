@@ -209,19 +209,24 @@ body.bg-dark .block--logo .field--name-body a {
   top: 0;
   right: 0;
   width: 100%;
-  z-index: 103; }
+  z-index: 103;
+  margin-top: 32px; }
+  @media (min-width: 1200px) {
+    .region-header-right {
+      margin-top: 0; } }
   .region-header-right .block {
     float: right; }
 
 .show-menu {
+  display: none;
   font-size: 0;
-  display: block;
   height: 10px;
   width: 24px;
   position: relative;
   padding: 7px 10px; }
   @media (max-width: 720px) {
     .show-menu {
+      display: block;
       height: 25px; } }
   .show-menu:before, .show-menu:after {
     content: "";
@@ -268,13 +273,9 @@ body.bg-dark .hide-menu {
 .menu-open .hide-menu {
   display: block; }
 
-.block--main-menu, .block--social-menu {
-  display: none; }
-
-.menu-open .block--main-menu, .menu-open .block--social-menu {
-  display: block; }
-
 @media (max-width: 720px) {
+  .menu-open .block--main-menu, .menu-open .block--social-menu {
+    display: block; }
   .menu-open .region-header-right:before {
     content: "";
     position: fixed;
@@ -292,6 +293,7 @@ body.bg-dark .hide-menu {
   z-index: 103; }
   @media (max-width: 720px) {
     .block--main-menu {
+      display: none;
       position: fixed;
       top: 20%;
       left: 0;
@@ -336,6 +338,7 @@ body.bg-dark .block--main-menu .menu a {
   clear: right; }
   @media (max-width: 720px) {
     .block--social-menu {
+      display: none;
       position: fixed;
       z-index: 103;
       top: 35px;

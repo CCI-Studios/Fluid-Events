@@ -79,6 +79,15 @@ body.bg-dark .block--logo
   right: 0;
   width: 100%;
   z-index: 103;
+  margin-top: 32px;
+
+  &
+  {
+    @media (min-width: 1200px)
+    {
+      margin-top: 0;
+    }
+  }
 
   .block
   {
@@ -88,8 +97,8 @@ body.bg-dark .block--logo
 
 .show-menu
 {
+  display: none;
   font-size: 0;
-  display: block;
   height: 10px;
   width: 24px;
   position: relative;
@@ -99,6 +108,7 @@ body.bg-dark .block--logo
   {
     @media (max-width: 720px)
     {
+      display: block;
       height: 25px;
     }
   }
@@ -173,20 +183,16 @@ body.bg-dark .hide-menu
   }
 }
 
-.block--main-menu, .block--social-menu
-{
-  display: none;
-}
 .menu-open
 {
-  .block--main-menu, .block--social-menu
-  {
-    display: block;
-  }
   &
   {
     @media (max-width: 720px)
     {
+      .block--main-menu, .block--social-menu
+      {
+        display: block;
+      }
       .region-header-right
       {
         &:before
@@ -216,6 +222,7 @@ body.bg-dark .hide-menu
   {
     @media (max-width: 720px)
     {
+      display: none;
       position: fixed;
       top: 20%;
       left: 0;
@@ -296,6 +303,7 @@ body.bg-dark .block--main-menu .menu a
   {
     @media (max-width: 720px)
     {
+      display: none;
       position: fixed;
       z-index: 103;
       top: 35px;
