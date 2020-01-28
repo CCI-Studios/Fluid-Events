@@ -393,6 +393,12 @@ body.bg-dark .block--social-menu .menu .ig {
 body.bg-dark .block--social-menu .menu .tw {
   background-image: url(../images/icon-tw-white.svg); }
 
+body.bg-dark .block--social-menu .menu .fb {
+  background-image: url(../images/icon-fb-white.svg); }
+
+body.bg-dark .block--social-menu .menu .in {
+  background-image: url(../images/icon-in-white.svg); }
+
 .block--custom-page-title {
   background-repeat: no-repeat;
   background-position: center center;
