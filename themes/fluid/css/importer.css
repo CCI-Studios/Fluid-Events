@@ -373,6 +373,16 @@ body.bg-dark .block--main-menu .menu a {
     @media (max-width: 720px) {
       .block--social-menu .menu .tw {
         background-image: url(../images/icon-tw-white.svg); } }
+  .block--social-menu .menu .fb {
+    background-image: url(../images/icon-fb-color.svg); }
+    @media (max-width: 720px) {
+      .block--social-menu .menu .fb {
+        background-image: url(../images/icon-fb-white.svg); } }
+  .block--social-menu .menu .in {
+    background-image: url(../images/icon-in-color.svg); }
+    @media (max-width: 720px) {
+      .block--social-menu .menu .in {
+        background-image: url(../images/icon-in-white.svg); } }
 
 body.bg-dark .block--social-menu .menu a {
   filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.35)); }
@@ -469,6 +479,10 @@ body.bg-dark .block--social-menu .menu .tw {
       background-image: url(../images/icon-ig-color.svg); }
     .block--footer-social-menu .menu .tw {
       background-image: url(../images/icon-tw-color.svg); }
+    .block--footer-social-menu .menu .fb {
+      background-image: url(../images/icon-fb-color.svg); }
+    .block--footer-social-menu .menu .in {
+      background-image: url(../images/icon-in-color.svg); }
 
 .block--footer-menu {
   overflow: hidden;
